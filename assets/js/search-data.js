@@ -10,18 +10,11 @@ ninja.data = [{
       window.location.href = "/test-web/";
     },
   },{id: "nav-publications",
-          title: "publications",
-          description: "Publications in reversed chronological order.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/test-web/publications/";
-          },
-        },{id: "nav-blog",
-          title: "blog",
+          title: "Publications",
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/test-web/blog/";
+            window.location.href = "/test-web/publications/";
           },
         },{id: "nav-projects",
           title: "projects",
@@ -51,8 +44,8 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/test-web/cv/";
           },
-        },{id: "nav-media",
-          title: "media",
+        },{id: "nav-media-coverage",
+          title: "Media Coverage",
           description: "Media coverage of our research.",
           section: "Navigation",
           handler: () => {
