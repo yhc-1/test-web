@@ -23,12 +23,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/test-web/publications/";
           },
-        },{id: "nav-datasets",
-          title: "Datasets",
+        },{id: "nav-cooking",
+          title: "Cooking",
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/test-web/datasets/";
+            window.location.href = "/test-web/cooking/";
           },
         },{id: "nav-media",
           title: "Media",
@@ -36,13 +36,6 @@ ninja.data = [{
           section: "Navigation",
           handler: () => {
             window.location.href = "/test-web/media/";
-          },
-        },{id: "nav-cooking",
-          title: "cooking",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/test-web/cooking/";
           },
         },{id: "nav-teaching",
           title: "teaching",
