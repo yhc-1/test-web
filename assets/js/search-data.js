@@ -51,13 +51,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/test-web/cv/";
           },
-        },{id: "nav-cv",
-          title: "cv",
-          description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/test-web/cv/";
-          },
         },{id: "nav-media",
           title: "media",
           description: "Media coverage of our research.",
@@ -72,21 +65,14 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/test-web/teaching/";
           },
-        },{id: "dropdown-bookshelf",
-              title: "bookshelf",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/test-web/books/";
-              },
-            },{id: "dropdown-blog",
-              title: "blog",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/test-web/blog/";
-              },
-            },{id: "post-a-post-with-plotly-js",
+        },{id: "nav-cooking",
+          title: "cooking",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/test-web/cooking/";
+          },
+        },{id: "post-a-post-with-plotly-js",
         
           title: "a post with plotly.js",
         
