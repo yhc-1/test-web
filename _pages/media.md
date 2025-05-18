@@ -4,7 +4,7 @@ permalink: /media/
 title: Media
 description: 
 nav: true
-nav_order: 5
+nav_order: 4
 ---
 - ["Federated Learning for Robot Picking (FLAIROP): Robots learning without boundaries"](https://https://www.automationmag.com/flairop-federated-learning-for-robot-picking/)  
   *Manufacturing Automation*, October 2024 
