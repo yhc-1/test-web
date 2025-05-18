@@ -9,12 +9,12 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/test-web/";
     },
-  },{id: "nav-about",
-          title: "About",
+  },{id: "nav-publications",
+          title: "Publications",
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/test-web/";
+            window.location.href = "/test-web/publications/";
           },
         },{id: "nav-students",
           title: "Students",
@@ -22,13 +22,6 @@ ninja.data = [{
           section: "Navigation",
           handler: () => {
             window.location.href = "/test-web/students/";
-          },
-        },{id: "nav-publications",
-          title: "Publications",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/test-web/publications/";
           },
         },{id: "nav-teaching",
           title: "Teaching",
