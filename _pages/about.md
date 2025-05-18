@@ -6,7 +6,7 @@ subtitle: Research Assistant Professor at the <a href='https://vip.uwaterloo.ca/
 
 profile:
   align: right
-  image: assets/img/yhc.jpg
+  image: yhc.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Vision and Image Processing Lab</p>
