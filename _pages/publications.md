@@ -1,13 +1,11 @@
 ---
 layout: page
 permalink: /publications/
-title: publications
-description: Publications in reversed chronological order.
+title: Publications
 nav: true
-nav_order: 1
+nav_order: 2
 ---
-
-## Publications (2024)
+## 2024
  
 1. D. Mao, Y. Chen, Y. Wu, M. Gilles, and A. Wong, "Rethinking resource competition in multi-task learning: From shared parameters to shared representation," IEEE Access, pp. 1–1, 2024. doi: 10.1109/ACCESS.2024.3429281.
 

@@ -1,15 +1,14 @@
 ---
 layout: page
 permalink: /media/
-title: media
+title: Media Coverage
 description: Media coverage of our research.
 nav: true
 nav_order: 5
 ---
+- ["Federated Learning for Robot Picking (FLAIROP): Robots learning without boundaries"](https://https://www.automationmag.com/flairop-federated-learning-for-robot-picking/)  
+  *Manufacturing Automation*, October 2024 
 
-## Media Coverage
-
-### 2024
 - ["AI wants to count your calories"](https://www.wsj.com/tech/ai/ai-count-calories-weight-loss-6acc7019?st=a5sk6r6qoaqex7t&reflink=desktopwebshare_permalink)  
   *The Wall Street Journal*, August 2024
 
