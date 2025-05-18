@@ -16,8 +16,8 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/test-web/";
           },
-        },{id: "nav-",
-          title: "",
+        },{id: "nav-students",
+          title: "Students",
           description: "",
           section: "Navigation",
           handler: () => {
@@ -30,12 +30,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/test-web/publications/";
           },
-        },{id: "nav-cooking",
-          title: "Cooking",
+        },{id: "nav-teaching",
+          title: "Teaching",
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/test-web/cooking/";
+            window.location.href = "/test-web/teaching/";
           },
         },{id: "nav-media",
           title: "Media",
@@ -44,12 +44,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/test-web/media/";
           },
-        },{id: "nav-teaching",
-          title: "teaching",
-          description: "Materials for courses you taught. Replace this text with your description.",
+        },{id: "nav-cooking",
+          title: "Cooking",
+          description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/test-web/teaching/";
+            window.location.href = "/test-web/cooking/";
           },
         },{id: "books-the-godfather",
           title: 'The Godfather',
