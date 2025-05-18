@@ -1,16 +1,13 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: Research Assistant Professor at the <a href='https://vip.uwaterloo.ca/'>Vision and Image Processing Lab (VIP)</a>
+
 
 profile:
   align: right
   image: yhc.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>Vision and Image Processing Lab</p>
-    <p>University of Waterloo</p>
 
 news: false  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
