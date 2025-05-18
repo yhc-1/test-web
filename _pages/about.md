@@ -6,19 +6,17 @@ subtitle: Research Assistant Professor at the <a href='https://vip.uwaterloo.ca/
 
 profile:
   align: right
-  image: # prof_pic.jpg
+  image: assets/img/yhc.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Vision and Image Processing Lab</p>
     <p>University of Waterloo</p>
 
-news: true  # includes a list of news items
+news: false  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+selected_papers: false # includes a list of papers marked as "selected={true}"
+social: false  # includes social icons at the bottom of the page
 ---
-
-[Google Scholar](https://scholar.google.ca/citations?user=NwxXuCYAAAAJ&hl=en) | [Linkedin](https://www.linkedin.com/in/yuhao-chen-789a2164/)
 
 I am a Research Assistant Professor at the [Vision and Image Processing Lab (VIP)](https://vip.uwaterloo.ca/) at the University of Waterloo, specializing in Computer Vision. I joined the VIP lab as a postdoctoral fellow under the supervision of [Professor Alexander Wong](https://uwaterloo.ca/systems-design-engineering/profile/a28wong) from 2020 to 2022, was promoted to Research Associate in 2022, and became a Research Assistant Professor in 2023. I earned my B.A.Sc. and Ph.D. degrees in Electrical and Computer Engineering from Purdue University in 2015 and 2019, respectively, where I was a member of the [Video and Image Processing (VIPER) laboratory](https://engineering.purdue.edu/~ips/), under the supervision of [Professor Edward J. Delp](https://engineering.purdue.edu/~ace/). 
 
@@ -38,10 +36,3 @@ Our lab is also looking for students in Remote Sensing, supervised by [Professor
 - **Co-Chair** [CVIS-22](https://uwcvis.github.io/cvis2022/)
 - **Co-Chair** [CVIS-21](https://cvis2021.weebly.com/)
 
-## Other Interests
-I like to cook and bake. Here are some websites/channels I follow for recipes:
-- Chinese, [特廚隋卞](https://www.youtube.com/@ChefSui)
-- Chinese, [老饭骨](https://www.youtube.com/@LaoFanGu)
-- Chinese, [一只梨花压海棠的厨房](https://www.xiachufang.com/cook/106163581/created/)
-- Japanese, [Just One Cook Book](https://www.justonecookbook.com/)
-- Korean, [MaangChi](https://www.maangchi.com/)

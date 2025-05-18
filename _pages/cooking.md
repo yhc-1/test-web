@@ -1,11 +1,15 @@
 ---
-layout: cv
-permalink: /cv/
-title: cv
+layout: default
+permalink: /cooking/
+title: cooking
 nav: true
-nav_order: 5
-cv_pdf: example_pdf.pdf # you can also use external links here
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
-toc:
-  sidebar: left
+nav_order: 9
+
 ---
+
+I like to cook and bake. Here are some websites/channels I follow for recipes:
+- Chinese, [特廚隋卞](https://www.youtube.com/@ChefSui)
+- Chinese, [老饭骨](https://www.youtube.com/@LaoFanGu)
+- Chinese, [一只梨花压海棠的厨房](https://www.xiachufang.com/cook/106163581/created/)
+- Japanese, [Just One Cook Book](https://www.justonecookbook.com/)
+- Korean, [MaangChi](https://www.maangchi.com/)
