@@ -30,12 +30,19 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/test-web/projects/";
           },
-        },{id: "nav-repositories",
-          title: "repositories",
-          description: "Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.",
+        },{id: "nav-students",
+          title: "students",
+          description: "Current and past students.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/test-web/repositories/";
+            window.location.href = "/test-web/students/";
+          },
+        },{id: "nav-datasets",
+          title: "datasets",
+          description: "Research datasets released by our lab.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/test-web/datasets/";
           },
         },{id: "nav-cv",
           title: "cv",
@@ -43,6 +50,20 @@ ninja.data = [{
           section: "Navigation",
           handler: () => {
             window.location.href = "/test-web/cv/";
+          },
+        },{id: "nav-cv",
+          title: "cv",
+          description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/test-web/cv/";
+          },
+        },{id: "nav-media",
+          title: "media",
+          description: "Media coverage of our research.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/test-web/media/";
           },
         },{id: "nav-teaching",
           title: "teaching",
