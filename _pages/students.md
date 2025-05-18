@@ -1,10 +1,8 @@
 ---
 layout: page
 permalink: /students/
-title: students
-description: Current and past students.
 nav: true
-nav_order: 3
+nav_order: 1
 ---
 
 ## PhD Students

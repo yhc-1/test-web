@@ -1,8 +1,7 @@
 ---
 layout: page
 permalink: /media/
-title: Media Coverage
-description: Media coverage of our research.
+title: Media
 nav: true
 nav_order: 5
 ---
