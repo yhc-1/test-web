@@ -1,9 +1,9 @@
 ---
-layout: default
+layout: page
 permalink: /cooking/
 title: cooking
 nav: true
-nav_order: 9
+nav_order: 6
 
 ---
 
