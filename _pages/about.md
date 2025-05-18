@@ -2,33 +2,46 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Research Assistant Professor at the <a href='https://vip.uwaterloo.ca/'>Vision and Image Processing Lab (VIP)</a>
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: # prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Vision and Image Processing Lab</p>
+    <p>University of Waterloo</p>
 
+news: true  # includes a list of news items
+latest_posts: false  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
-
-announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+[Google Scholar](https://scholar.google.ca/citations?user=NwxXuCYAAAAJ&hl=en) | [Linkedin](https://www.linkedin.com/in/yuhao-chen-789a2164/)
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I am a Research Assistant Professor at the [Vision and Image Processing Lab (VIP)](https://vip.uwaterloo.ca/) at the University of Waterloo, specializing in Computer Vision. I joined the VIP lab as a postdoctoral fellow under the supervision of [Professor Alexander Wong](https://uwaterloo.ca/systems-design-engineering/profile/a28wong) from 2020 to 2022, was promoted to Research Associate in 2022, and became a Research Assistant Professor in 2023. I earned my B.A.Sc. and Ph.D. degrees in Electrical and Computer Engineering from Purdue University in 2015 and 2019, respectively, where I was a member of the [Video and Image Processing (VIPER) laboratory](https://engineering.purdue.edu/~ips/), under the supervision of [Professor Edward J. Delp](https://engineering.purdue.edu/~ace/). 
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+My primary research focuses on developing advanced CV algorithms for analyzing food, including their shapes and nutritional content. **My ultimate vision is to empower individuals to create their own games and movies through accessible, powerful CV algorithms.** This vision is deeply connected to my current work, where I am honing the skills necessary to digitize and bring various aspects of the world into the digital realm. If our visions align, I welcome you to reach out for discussions and collaborations.
+
+## Prospective Students/Postdocs
+I'm looking for MASc/PhD students and Postdocs for Computer Vision in Construction. Candidates with background in SLAM, Nerf, Gaussian Splatting, Robotics are encouraged to apply.
+
+Our lab is also looking for students in Remote Sensing, supervised by [Professor David Clausi](https://uwaterloo.ca/systems-design-engineering/profile/dclausi)
+
+## Professional Services
+- **Chair** [CVPR 2025 MetaFood Workshop](https://sites.google.com/view/cvpr-metafood-2025)
+- **Chair** [CVPR 2024 MetaFood Workshop](https://sites.google.com/view/cvpr-metafood-2024)
+- **Co-Chair** [IAAI-24](https://aaai.org/aaai-conference/iaai-24-program/)
+- **Co-Chair** [IAAI-23](https://aaai-23.aaai.org/iaai-23-call/)
+- **Co-Chair** [CVIS-23](https://uwcvis.github.io/cvis2023/)
+- **Co-Chair** [CVIS-22](https://uwcvis.github.io/cvis2022/)
+- **Co-Chair** [CVIS-21](https://cvis2021.weebly.com/)
+
+## Other Interests
+I like to cook and bake. Here are some websites/channels I follow for recipes:
+- Chinese, [特廚隋卞](https://www.youtube.com/@ChefSui)
+- Chinese, [老饭骨](https://www.youtube.com/@LaoFanGu)
+- Chinese, [一只梨花压海棠的厨房](https://www.xiachufang.com/cook/106163581/created/)
+- Japanese, [Just One Cook Book](https://www.justonecookbook.com/)
+- Korean, [MaangChi](https://www.maangchi.com/)
