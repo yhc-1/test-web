@@ -9,7 +9,14 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/test-web/";
     },
-  },{id: "nav-publications",
+  },{id: "nav-",
+          title: "",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/test-web/students/";
+          },
+        },{id: "nav-publications",
           title: "Publications",
           description: "",
           section: "Navigation",
@@ -23,13 +30,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/test-web/projects/";
           },
-        },{id: "nav-students",
-          title: "students",
-          description: "Current and past students.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/test-web/students/";
-          },
         },{id: "nav-datasets",
           title: "datasets",
           description: "Research datasets released by our lab.",
@@ -37,16 +37,9 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/test-web/datasets/";
           },
-        },{id: "nav-cv",
-          title: "cv",
-          description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/test-web/cv/";
-          },
-        },{id: "nav-media-coverage",
-          title: "Media Coverage",
-          description: "Media coverage of our research.",
+        },{id: "nav-media",
+          title: "Media",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/test-web/media/";
