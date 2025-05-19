@@ -74,10 +74,22 @@ I supervise students' research in a structured manner, with clear goals for both
                 <div class="student-info">
                   {% if student.linkedin %}
                   <a href="{{ student.linkedin }}" target="_blank" class="student-name-link">
-                    <strong class="student-full-name">{{ student.name }}</strong> {{ student.type }}{% if student.major %} ({{ student.major }}){% endif %}, {{student.terms}}
+                    <strong class="student-full-name">{{ student.name }}</strong> {{ student.type }}{% if student.major %} ({{ student.major }}){% endif %}
+                    {% assign terms_array = student.terms | split: "," %}
+                    {% if terms_array.size > 1 %}
+                    <div class="student-terms">Terms: {{ student.terms }}</div>
+                    {% else %}
+                    , {{ student.terms }}
+                    {% endif %}
                   </a>
                   {% else %}
-                  <strong class="student-full-name">{{ student.name }}</strong> {{ student.type }}{% if student.major %} ({{ student.major }}){% endif %}, {{student.terms}}
+                  <strong class="student-full-name">{{ student.name }}</strong> {{ student.type }}{% if student.major %} ({{ student.major }}){% endif %}
+                  {% assign terms_array = student.terms | split: "," %}
+                  {% if terms_array.size > 1 %}
+                  <div class="student-terms">Terms: {{ student.terms }}</div>
+                  {% else %}
+                  , {{ student.terms }}
+                  {% endif %}
                   {% endif %}
                   <div class="student-details research-field undergrad-details">{{ student.research }}</div>
                   {% if student.paper %}
@@ -239,6 +251,12 @@ I supervise students' research in a structured manner, with clear goals for both
     border: none;
     opacity: 0;
     visibility: hidden;
+}
+
+.student-terms {
+    color: #666;
+    font-size: 0.9em;
+    margin-top: 0.2em;
 }
 </style>
 
