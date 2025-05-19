@@ -1,8 +1,186 @@
-# Current Students (2024)
+
+- name: Anna Tamlin
+  type: URA
+  research: Food Computing
+  terms: Spring 2025
+
+- name: Leonard Zhou
+  type: URA
+  research: 3D Reconstruction for Construction Site
+  terms: Spring 2025
+
+- name: Divya Makkar
+  type: URA
+  research: LeRobot
+  terms: Spring 2025
+
+- name: Akil Giri
+  type: URA
+  research: 3D Vision for Construction Site
+  terms: Spring 2025
+
+- name: Arpit Arun Kumaar
+  type: URA
+  research: LeRobot
+  terms: Spring 2025
+
+- name: Arun
+  type: URA
+  research: Hockey Analytics
+  terms: Spring 2025
+
+- name: Daniel Wu
+  type: URA
+  research: Hockey Analytics
+  terms: Spring 2025
+
+- name: David Gan
+  type: URA
+  research: Tennis Analytics
+  terms: Spring 2025
+
+- name: Frank Chen
+  type: URA
+  research: Hockey Analytics
+  terms: Spring 2025
+
+- name: Luke Clausi
+  type: URA
+  research: Simulation Engine for Drone
+  terms: Spring 2025
+
+- name: Nina Zhang
+  type: URA
+  research: Video Activity Recognition
+  terms: Spring 2025
+
+- name: Iris Mo
+  type: URA
+  research: Mobile Robot
+  terms: Spring 2025
+
+- name: Ishan
+  type: URA
+  research: LeRobot
+  terms: Spring 2025
+
+- name: Jenneva Li
+  type: URA
+  research: LeRobot
+  terms: Spring 2025
+
+- name: Jerry Zhang
+  type: URA
+  research: Food Computing
+  terms: Spring 2025
+
+- name: Leo You
+  type: URA
+  research: Hockey Analytics
+  terms: Spring 2025
+
+- name: Mark Do
+  type: URA
+  research: 3D Reconstruction for Construction Site
+  terms: Spring 2025
+
+- name: Mckale Chung
+  type: URA
+  research: 3D Reconstruction for Food
+  terms: Spring 2025
+
+- name: Xuanpeng Wang
+  type: URA
+  research: Food Computing
+  terms: Spring 2025
+
+- name: Qingyuan Li
+  type: URA
+  research: Food Computing on Wearable Glasses
+  terms: Spring 2025
+
+- name: Simon Hampton
+  type: URA
+  research: Hockey Analytics
+  terms: Spring 2025
+
+
+# 2025 Winter
+- name: George Wang
+  type: URA
+  research: DinoV2 feature representation
+  terms: Winter 2025
+
+- name: Aayush Deshpande
+  type: URA
+  research: LeRobot
+  terms: Winter 2025
+
+- name: Aung Khant Min
+  type: URA
+  research: Depth-based Food Portion Estimation
+  terms: Winter 2025
+
+- name: Emily Yu
+  type: URA
+  research: Scene Graph Consistency and Distances
+  terms: Winter 2025
+
+
+# 2024 Fall
+- name: Joshua Li
+  type: URA
+  research: Dynamic Scene Graph Generation for Kitchen Activities
+  terms: Winter 2025, Fall 2024
+
+- name: Fan Yang
+  type: URA
+  research: 6D Pose for Utensil and Hands
+  terms: Winter 2025, Fall 2024, Spring 2024
+
+- name: Kevin Tan
+  type: URA
+  research: 6D Pose for Utensil and Hands
+  terms: Winter 2025, Fall 2024, Spring 2024
+
+
+- name: Valerie Stoica
+  type: URA
+  research: Nutrition intake estimation app development for older adults
+  terms: Winter 2025, Fall 2024, Spring 2025
+
+- name: Yuchen Lin
+  type: URA, Co-op
+  research: Drone-based 3D Reconstruction for Construction Site
+  terms: Winter 2025, Spring 2025, Fall 2024
+
+- name: Mihir Gupta
+  type: URA
+  research: Drone-based 3D Reconstruction for Construction Site
+  terms: Fall 2024
+
+- name: Maxwell Lou
+  type: URA
+  research: 4D gaussian splatting for construction site
+  terms: Fall 2024
+
+- name: Alexander Matros
+  type: URA
+  research: Video scene graph generation for kitchen activities
+  terms: Fall 2024
+
+
+- name: Carter Demars
+  type: URA
+  research: 4D gaussian splatting reconstruction for kitchen activities
+  terms: Fall 2024
+
+
+# Students (2024)
 - name: Ervin Wang
   type: URA
   research: Ego-centric Food Portion Estimation
-  terms: Spring 2024
+  terms: Spring 2024, Fall 2024, Winter 2025
 
 - name: Tyler Zeng
   type: URA
@@ -53,7 +231,7 @@
 - name: Akil K. Pathiranage
   type: Co-op, URA
   research: Food Image Watermark Removal, Plate Model Estimation from Food Images
-  terms: Winter 2024, Fall 2023
+  terms: Winter 2025,Winter 2024, Fall 2023
   linkedin: https://www.linkedin.com/in/akilpath/
 
 - name: Daniel Mao
@@ -79,8 +257,8 @@
 
 - name: Aaryam Sharma
   type: URA
-  research: Food Portion Estimation
-  terms: Winter 2024, Fall 2023
+  research: Hierarchical Food Image Classification
+  terms: Winter 2024, Fall 2023, Winter 2025
 
 - name: Terry Zha
   type: URA
@@ -89,8 +267,8 @@
 
 - name: Wallace Lee
   type: URA
-  research: Generative AI for Covid X-ray
-  terms: Winter 2024, Fall 2023
+  research: Generative AI for Covid X-ray, Human Dancing Avatar Generation, 3D Reconstruction for Food in Video
+  terms: Winter 2025,Fall 2024,Winter 2024, Fall 2023
 
 - name: Meg Paulson
   type: URA
@@ -114,13 +292,13 @@
 
 - name: Krish Shah
   type: URA
-  research: 3D Food data collection
-  terms: Spring 2024, Winter 2024, Fall 2023
+  research: 3D Food data collection, Food Video QA
+  terms: Winter 2025, Fall 2024,Spring 2024, Winter 2024, Fall 2023
 
 - name: Siddharth Viswanath
   type: URA
-  research: 3D Food data collection
-  terms: Spring 2024, Winter 2024, Fall 2023
+  research: 3D Food data collection, Food Video QA
+  terms: Winter 2025, Fall 2024,Spring 2024, Winter 2024, Fall 2023
 
 - name: Connie Wong
   type: URA
