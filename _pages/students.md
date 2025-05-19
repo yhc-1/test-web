@@ -6,7 +6,7 @@ description:
 nav: true
 nav_order: 2
 ---
-I supervise students in a structured manner, with clear goals for both short-term exploration and long-term research growth. My aim is to keep everyone engaged with the latest advancements in the field, while helping my graduate students stay focused on their core research problems. To support this, I involve many undergraduate students in exploratory projects focused on emerging algorithms. This creates a collaborative environment where knowledge is shared across the lab and students learn from one another.
+I supervise students' research in a structured manner, with clear goals for both **short-term exploration** and **long-term deep dive**. My aim is to keep everyone engaged with the latest advancements in the field, while helping my graduate students stay focused on their core research problems. To support this, _I involve many undergraduate students in exploratory projects_ focused on emerging algorithms. This creates a collaborative environment where knowledge is shared across the lab and students learn from one another.
 
 ## Graduate Students
 <div class="student-section">
