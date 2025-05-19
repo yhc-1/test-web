@@ -55,37 +55,42 @@ nav_order: 2
   {% for term in all_terms %}
     {% assign students_in_term = site.data.undergrads | where_exp: "student", "student.terms contains term" %}
     {% if students_in_term.size > 0 %}
-      <h3 class="term-header">{{ term }}</h3>
-      <div class="term-group">
-        {% for student in students_in_term %}
-          {% assign latest_term = student.terms | split: "," | first | strip %}
-          {% if latest_term == term %}
-            <div class="student-row undergrad-row">
-              {% if student.image %}
-              <div class="student-image undergrad-image">
-                <img src="../assets/images/students/{{ student.image }}" alt="{{ student.name }}">
-              </div>
-              {% endif %}
-              <div class="student-info">
-                {% if student.linkedin %}
-                <a href="{{ student.linkedin }}" target="_blank" class="student-name-link">
-                  <strong class="student-full-name">{{ student.name }}</strong> {{ student.type }}{% if student.major %} ({{ student.major }}), {{student.terms}} {% endif %}
-                </a>
-                {% else %}
-                <strong class="student-full-name">{{ student.name }}</strong> {{ student.type }}{% if student.major %} ({{ student.major }}), {{student.terms}} {% endif %}
-                {% endif %}
-                <div class="student-details research-field undergrad-details">{{ student.research }}</div>
-                {% if student.paper %}
-                <div class="student-details undergrad-details">
-                  <a href="{{ student.paper }}" target="_blank" class="paper-link">
-                    <i class="fas fa-file-alt"></i> Publication
-                  </a>
+      <div class="term-container">
+        <h3 class="term-header" onclick="toggleTerm(this)">
+          <span class="term-title">{{ term }}</span>
+          <span class="toggle-icon">▼</span>
+        </h3>
+        <div class="term-group">
+          {% for student in students_in_term %}
+            {% assign latest_term = student.terms | split: "," | first | strip %}
+            {% if latest_term == term %}
+              <div class="student-row undergrad-row">
+                {% if student.image %}
+                <div class="student-image undergrad-image">
+                  <img src="../assets/images/students/{{ student.image }}" alt="{{ student.name }}">
                 </div>
                 {% endif %}
+                <div class="student-info">
+                  {% if student.linkedin %}
+                  <a href="{{ student.linkedin }}" target="_blank" class="student-name-link">
+                    <strong class="student-full-name">{{ student.name }}</strong> {{ student.type }}{% if student.major %} ({{ student.major }}), {{student.terms}} {% endif %}
+                  </a>
+                  {% else %}
+                  <strong class="student-full-name">{{ student.name }}</strong> {{ student.type }}{% if student.major %} ({{ student.major }}), {{student.terms}} {% endif %}
+                  {% endif %}
+                  <div class="student-details research-field undergrad-details">{{ student.research }}</div>
+                  {% if student.paper %}
+                  <div class="student-details undergrad-details">
+                    <a href="{{ student.paper }}" target="_blank" class="paper-link">
+                      <i class="fas fa-file-alt"></i> Publication
+                    </a>
+                  </div>
+                  {% endif %}
+                </div>
               </div>
-            </div>
-          {% endif %}
-        {% endfor %}
+            {% endif %}
+          {% endfor %}
+        </div>
       </div>
     {% endif %}
   {% endfor %}
@@ -185,7 +190,75 @@ nav_order: 2
 .paper-link i {
     margin-right: 0.3em;
 }
+
+/* New styles for collapsible terms */
+.term-container {
+    margin-bottom: 1em;
+}
+
+.term-header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 1em;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.term-header:hover {
+    background-color: #e9ecef;
+}
+
+.toggle-icon {
+    font-size: 0.8em;
+    transition: transform 0.3s;
+}
+
+.term-header.collapsed .toggle-icon {
+    transform: rotate(-90deg);
+}
+
+.term-group {
+    margin-left: 1em;
+    border-left: 2px solid #f0f0f0;
+    padding-left: 1em;
+    transition: max-height 0.3s ease-out;
+    overflow: hidden;
+}
+
+.term-group.collapsed {
+    max-height: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
 </style>
+
+<script>
+function toggleTerm(header) {
+    const termGroup = header.nextElementSibling;
+    const isCollapsed = header.classList.contains('collapsed');
+    
+    if (isCollapsed) {
+        header.classList.remove('collapsed');
+        termGroup.classList.remove('collapsed');
+    } else {
+        header.classList.add('collapsed');
+        termGroup.classList.add('collapsed');
+    }
+}
+
+// Initialize all terms as expanded
+document.addEventListener('DOMContentLoaded', function() {
+    const termHeaders = document.querySelectorAll('.term-header');
+    termHeaders.forEach(header => {
+        const termGroup = header.nextElementSibling;
+        termGroup.style.maxHeight = termGroup.scrollHeight + 'px';
+    });
+});
+</script>
 
 <!-- Font Awesome for paper icon -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
