@@ -50,7 +50,7 @@ nav_order: 2
 </div>
 
 ## Undergraduate Students
-<div class="student-section">
+<div class="student-section undergrad-section">
   {% assign all_terms = "Spring 2024,Winter 2024,Fall 2023,Spring 2023,Winter 2023,Fall 2022" | split: "," %}
   {% for term in all_terms %}
     {% assign students_in_term = site.data.undergrads | where_exp: "student", "student.terms contains term" %}
@@ -60,9 +60,9 @@ nav_order: 2
         {% for student in students_in_term %}
           {% assign latest_term = student.terms | split: "," | first | strip %}
           {% if latest_term == term %}
-            <div class="student-row">
+            <div class="student-row undergrad-row">
               {% if student.image %}
-              <div class="student-image">
+              <div class="student-image undergrad-image">
                 <img src="../assets/images/students/{{ student.image }}" alt="{{ student.name }}">
               </div>
               {% endif %}
@@ -74,12 +74,12 @@ nav_order: 2
                 {% else %}
                 <strong class="student-full-name">{{ student.name }}</strong>
                 {% endif %}
-                <div class="student-details">
+                <div class="student-details undergrad-details">
                   {{ student.type }}{% if student.major %} ({{ student.major }}){% endif %}
                 </div>
-                <div class="student-details research-field">{{ student.research }}</div>
+                <div class="student-details research-field undergrad-details">{{ student.research }}</div>
                 {% if student.paper %}
-                <div class="student-details">
+                <div class="student-details undergrad-details">
                   <a href="{{ student.paper }}" target="_blank" class="paper-link">
                     <i class="fas fa-file-alt"></i> Publication
                   </a>
@@ -100,18 +100,18 @@ nav_order: 2
 }
 
 .term-header {
-    margin-top: 2em;
-    margin-bottom: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
     color: #333;
     font-size: 1.2em;
     border-bottom: 2px solid #eee;
-    padding-bottom: 0.5em;
+    padding-bottom: 0.3em;
 }
 
 .term-group {
-    margin-left: 1.5em;
-    border-left: 3px solid #f0f0f0;
-    padding-left: 1.5em;
+    margin-left: 1em;
+    border-left: 2px solid #f0f0f0;
+    padding-left: 1em;
 }
 
 .student-row {
@@ -122,11 +122,23 @@ nav_order: 2
     border-bottom: 1px solid #eee;
 }
 
+/* Specific styles for undergraduate section */
+.undergrad-row {
+    margin-bottom: 0.8em;
+    padding-bottom: 0.8em;
+}
+
 .student-image {
     width: 100px;
     height: 100px;
     margin-right: 1.5em;
     flex-shrink: 0;
+}
+
+.undergrad-image {
+    width: 80px;
+    height: 80px;
+    margin-right: 1em;
 }
 
 .student-image img {
@@ -153,6 +165,11 @@ nav_order: 2
     color: #666;
     margin: 0.3em 0;
     font-size: 0.95em;
+}
+
+.undergrad-details {
+    margin: 0.2em 0;
+    font-size: 0.9em;
 }
 
 .research-field {
