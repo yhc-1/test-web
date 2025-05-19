@@ -6,9 +6,6 @@ description:
 nav: true
 nav_order: 2
 ---
-
-# Students and Researchers
-
 ## Graduate Students
 <div class="student-section">
   {% for student in site.data.grad_students %}
@@ -17,15 +14,16 @@ nav_order: 2
       <img src="../assets/images/students/{{ student.image }}" alt="{{ student.name }}">
     </div>
     <div class="student-info">
-      <strong>{{ student.first_name }}</strong> <strong class="student-full-name">{{ student.name }}</strong>
+      {% if student.linkedin %}
+      <a href="{{ student.linkedin }}" target="_blank" class="student-name-link">
+        <strong class="student-full-name">{{ student.name }}</strong>
+      </a>
+      {% else %}
+      <strong class="student-full-name">{{ student.name }}</strong>
+      {% endif %}
       <div class="student-details">{{ student.program }}</div>
       {% if student.cosupervisor %}
       <div class="student-details">Co-sup. with {{ student.cosupervisor }}</div>
-      {% endif %}
-      {% if student.linkedin %}
-      <div class="student-links">
-        <a href="{{ student.linkedin }}" target="_blank">Profile</a>
-      </div>
       {% endif %}
     </div>
   </div>
@@ -36,17 +34,15 @@ nav_order: 2
 <div class="student-section">
   {% for student in site.data.research_assistants %}
   <div class="student-row">
-    <div class="student-image">
-      <img src="../assets/images/students/{{ student.image }}" alt="{{ student.name }}">
-    </div>
     <div class="student-info">
-      <strong>{{ student.first_name }}</strong> <strong class="student-full-name">{{ student.name }}</strong>
-      <div class="student-details">Research Assistant</div>
       {% if student.linkedin %}
-      <div class="student-links">
-        <a href="{{ student.linkedin }}" target="_blank">Profile</a>
-      </div>
+      <a href="{{ student.linkedin }}" target="_blank" class="student-name-link">
+        <strong class="student-full-name">{{ student.name }}</strong>
+      </a>
+      {% else %}
+      <strong class="student-full-name">{{ student.name }}</strong>
       {% endif %}
+      <div class="student-details">Research Assistant</div>
     </div>
   </div>
   {% endfor %}
@@ -83,22 +79,18 @@ nav_order: 2
     flex-grow: 1;
 }
 
-.student-full-name {
-    margin-left: 0.5em;
+.student-name-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.student-name-link:hover {
+    text-decoration: underline;
 }
 
 .student-details {
     color: #666;
     margin: 0.3em 0;
     font-size: 0.95em;
-}
-
-.student-links a {
-    color: #0366d6;
-    text-decoration: none;
-}
-
-.student-links a:hover {
-    text-decoration: underline;
 }
 </style> 
