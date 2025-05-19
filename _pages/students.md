@@ -69,14 +69,11 @@ nav_order: 2
               <div class="student-info">
                 {% if student.linkedin %}
                 <a href="{{ student.linkedin }}" target="_blank" class="student-name-link">
-                  <strong class="student-full-name">{{ student.name }}</strong>
+                  <strong class="student-full-name">{{ student.name }}</strong> {{ student.type }}{% if student.major %} ({{ student.major }}){% endif %}
                 </a>
                 {% else %}
-                <strong class="student-full-name">{{ student.name }}</strong>
+                <strong class="student-full-name">{{ student.name }}</strong> {{ student.type }}{% if student.major %} ({{ student.major }}){% endif %}
                 {% endif %}
-                <div class="student-details undergrad-details">
-                  {{ student.type }}{% if student.major %} ({{ student.major }}){% endif %}
-                </div>
                 <div class="student-details research-field undergrad-details">{{ student.research }}</div>
                 {% if student.paper %}
                 <div class="student-details undergrad-details">
