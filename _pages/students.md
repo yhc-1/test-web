@@ -51,38 +51,67 @@ nav_order: 2
 
 ## Undergraduate Students
 <div class="student-section">
-  {% for student in site.data.undergrads %}
-  <div class="student-row">
-    {% if student.image %}
-    <div class="student-image">
-      <img src="../assets/images/students/{{ student.image }}" alt="{{ student.name }}">
-    </div>
-    {% endif %}
-    <div class="student-info">
-      {% if student.linkedin %}
-      <a href="{{ student.linkedin }}" target="_blank" class="student-name-link">
-        <strong class="student-full-name">{{ student.name }}</strong>
-      </a>
-      {% else %}
-      <strong class="student-full-name">{{ student.name }}</strong>
-      {% endif %}
-      <div class="student-details">{{ student.type }} ({{ student.major }}) • {{ student.terms }}</div>
-      <div class="student-details research-field">{{ student.research }}</div>
-      {% if student.paper %}
-      <div class="student-details">
-        <a href="{{ student.paper }}" target="_blank" class="paper-link">
-          <i class="fas fa-file-alt"></i> Publication
-        </a>
+  {% assign all_terms = "Spring 2024,Winter 2024,Fall 2023,Spring 2023,Winter 2023,Fall 2022" | split: "," %}
+  {% for term in all_terms %}
+    {% assign students_in_term = site.data.undergrads | where_exp: "student", "student.terms contains term" %}
+    {% if students_in_term.size > 0 %}
+      <h3 class="term-header">{{ term }}</h3>
+      <div class="term-group">
+        {% for student in students_in_term %}
+          {% assign latest_term = student.terms | split: "," | first | strip %}
+          {% if latest_term == term %}
+            <div class="student-row">
+              {% if student.image %}
+              <div class="student-image">
+                <img src="../assets/images/students/{{ student.image }}" alt="{{ student.name }}">
+              </div>
+              {% endif %}
+              <div class="student-info">
+                {% if student.linkedin %}
+                <a href="{{ student.linkedin }}" target="_blank" class="student-name-link">
+                  <strong class="student-full-name">{{ student.name }}</strong>
+                </a>
+                {% else %}
+                <strong class="student-full-name">{{ student.name }}</strong>
+                {% endif %}
+                <div class="student-details">
+                  {{ student.type }}{% if student.major %} ({{ student.major }}){% endif %}
+                </div>
+                <div class="student-details research-field">{{ student.research }}</div>
+                {% if student.paper %}
+                <div class="student-details">
+                  <a href="{{ student.paper }}" target="_blank" class="paper-link">
+                    <i class="fas fa-file-alt"></i> Publication
+                  </a>
+                </div>
+                {% endif %}
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
       </div>
-      {% endif %}
-    </div>
-  </div>
+    {% endif %}
   {% endfor %}
 </div>
 
 <style>
 .student-section {
     margin-bottom: 2em;
+}
+
+.term-header {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    color: #333;
+    font-size: 1.2em;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5em;
+}
+
+.term-group {
+    margin-left: 1.5em;
+    border-left: 3px solid #f0f0f0;
+    padding-left: 1.5em;
 }
 
 .student-row {
