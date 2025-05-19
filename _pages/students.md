@@ -74,10 +74,10 @@ I supervise students in a structured manner, with clear goals for both short-ter
                 <div class="student-info">
                   {% if student.linkedin %}
                   <a href="{{ student.linkedin }}" target="_blank" class="student-name-link">
-                    <strong class="student-full-name">{{ student.name }}</strong> {{ student.type }}{% if student.major %} ({{ student.major }}) {{student.terms}} {% endif %}
+                    <strong class="student-full-name">{{ student.name }}</strong> {{ student.type }}{% if student.major %} ({{ student.major }}){% endif %}, {{student.terms}}
                   </a>
                   {% else %}
-                  <strong class="student-full-name">{{ student.name }}</strong> {{ student.type }}{% if student.major %} ({{ student.major }}) {{student.terms}} {% endif %}
+                  <strong class="student-full-name">{{ student.name }}</strong> {{ student.type }}{% if student.major %} ({{ student.major }}){% endif %}, {{student.terms}}
                   {% endif %}
                   <div class="student-details research-field undergrad-details">{{ student.research }}</div>
                   {% if student.paper %}
