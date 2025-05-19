@@ -131,17 +131,7 @@
 - name: Joshua Li
   type: URA
   research: Dynamic Scene Graph Generation for Kitchen Activities
-  terms: Winter 2025, Fall 2024
-
-- name: Fan Yang
-  type: URA
-  research: 6D Pose for Utensil and Hands
-  terms: Winter 2025, Fall 2024, Spring 2024
-
-- name: Kevin Tan
-  type: URA
-  research: 6D Pose for Utensil and Hands
-  terms: Winter 2025, Fall 2024, Spring 2024
+  terms: Fall 2024, Winter 2025
 
 
 - name: Valerie Stoica
@@ -152,7 +142,7 @@
 - name: Yuchen Lin
   type: URA, Co-op
   research: Drone-based 3D Reconstruction for Construction Site
-  terms: Winter 2025, Spring 2025, Fall 2024
+  terms: Fall 2024, Winter 2025, Spring 2025
 
 - name: Mihir Gupta
   type: URA
@@ -175,6 +165,17 @@
   research: 4D gaussian splatting reconstruction for kitchen activities
   terms: Fall 2024
 
+
+# Spring 2024
+- name: Fan Yang
+  type: URA
+  research: 6D Pose for Utensil and Hands
+  terms: Spring 2024, Winter 2025, Fall 2024, 
+
+- name: Kevin Tan
+  type: URA
+  research: 6D Pose for Utensil and Hands
+  terms: Spring 2024, Winter 2025, Fall 2024
 
 # Students (2024)
 - name: Ervin Wang

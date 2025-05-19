@@ -1,11 +1,12 @@
 ---
 layout: page
 permalink: /students/
-title: 
+title: Students
 description: 
 nav: true
 nav_order: 2
 ---
+I supervise students in a structured manner, with clear goals for both short-term exploration and long-term research growth. My aim is to keep everyone engaged with the latest advancements in the field, while helping my graduate students stay focused on their core research problems. To support this, I involve many undergraduate students in exploratory projects focused on emerging algorithms. This creates a collaborative environment where knowledge is shared across the lab and students learn from one another.
 
 ## Graduate Students
 <div class="student-section">
@@ -51,7 +52,7 @@ nav_order: 2
 
 ## Undergraduate Students
 <div class="student-section undergrad-section">
-  {% assign all_terms = "Spring 2025, Winter 2025, Fall 2024, Spring 2024,Winter 2024,Fall 2023,Spring 2023,Winter 2023,Fall 2022" | split: "," %}
+  {% assign all_terms = "Spring 2025,Winter 2025,Fall 2024,Spring 2024,Winter 2024,Fall 2023,Spring 2023,Winter 2023,Fall 2022" | split: "," %}
   {% for term in all_terms %}
     {% assign students_in_term = site.data.undergrads | where_exp: "student", "student.terms contains term" %}
     {% if students_in_term.size > 0 %}
@@ -73,10 +74,10 @@ nav_order: 2
                 <div class="student-info">
                   {% if student.linkedin %}
                   <a href="{{ student.linkedin }}" target="_blank" class="student-name-link">
-                    <strong class="student-full-name">{{ student.name }}</strong> {{ student.type }}{% if student.major %} ({{ student.major }}), {{student.terms}} {% endif %}
+                    <strong class="student-full-name">{{ student.name }}</strong> {{ student.type }}{% if student.major %} ({{ student.major }}) {{student.terms}} {% endif %}
                   </a>
                   {% else %}
-                  <strong class="student-full-name">{{ student.name }}</strong> {{ student.type }}{% if student.major %} ({{ student.major }}), {{student.terms}} {% endif %}
+                  <strong class="student-full-name">{{ student.name }}</strong> {{ student.type }}{% if student.major %} ({{ student.major }}) {{student.terms}} {% endif %}
                   {% endif %}
                   <div class="student-details research-field undergrad-details">{{ student.research }}</div>
                   {% if student.paper %}
