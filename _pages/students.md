@@ -51,7 +51,7 @@ nav_order: 2
 
 ## Undergraduate Students
 <div class="student-section undergrad-section">
-  {% assign all_terms = "Spring 2024,Winter 2024,Fall 2023,Spring 2023,Winter 2023,Fall 2022" | split: "," %}
+  {% assign all_terms = "Spring 2025, Winter 2025, Fall 2024, Spring 2024,Winter 2024,Fall 2023,Spring 2023,Winter 2023,Fall 2022" | split: "," %}
   {% for term in all_terms %}
     {% assign students_in_term = site.data.undergrads | where_exp: "student", "student.terms contains term" %}
     {% if students_in_term.size > 0 %}
@@ -191,7 +191,7 @@ nav_order: 2
     margin-right: 0.3em;
 }
 
-/* New styles for collapsible terms */
+/* Updated styles for collapsible terms */
 .term-container {
     margin-bottom: 1em;
 }
@@ -205,6 +205,7 @@ nav_order: 2
     background-color: #f8f9fa;
     border-radius: 4px;
     transition: background-color 0.2s;
+    margin-bottom: 0.5em;
 }
 
 .term-header:hover {
@@ -224,8 +225,10 @@ nav_order: 2
     margin-left: 1em;
     border-left: 2px solid #f0f0f0;
     padding-left: 1em;
-    transition: max-height 0.3s ease-out;
-    overflow: hidden;
+    transition: all 0.3s ease-out;
+    max-height: 2000px; /* Large enough to contain content */
+    opacity: 1;
+    visibility: visible;
 }
 
 .term-group.collapsed {
@@ -233,6 +236,8 @@ nav_order: 2
     margin: 0;
     padding: 0;
     border: none;
+    opacity: 0;
+    visibility: hidden;
 }
 </style>
 
@@ -244,9 +249,12 @@ function toggleTerm(header) {
     if (isCollapsed) {
         header.classList.remove('collapsed');
         termGroup.classList.remove('collapsed');
+        // Set the actual height after removing collapsed class
+        termGroup.style.maxHeight = termGroup.scrollHeight + 'px';
     } else {
         header.classList.add('collapsed');
         termGroup.classList.add('collapsed');
+        termGroup.style.maxHeight = '0';
     }
 }
 
