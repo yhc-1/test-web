@@ -78,9 +78,6 @@ I supervise students' research in a structured manner, with clear goals for both
                     {% assign terms_array = student.terms | split: "," %}
                     {% if terms_array.size > 1 %}
                     <div class="student-terms">Terms: {{ student.terms }}</div>
-                    {% else %}
-                    , {{ student.terms }}
-                    {% endif %}
                   </a>
                   {% else %}
                   <strong class="student-full-name">{{ student.name }}</strong> {{ student.type }}{% if student.major %} ({{ student.major }}){% endif %}
